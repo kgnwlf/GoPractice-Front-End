@@ -8,13 +8,11 @@ export default function ToDoController () {
 	
 	return (
 
-		<div className="flex h-screen">
-			<div className="m-auto">
+		<div className="app-container">
 
-				<AddToDo toDos={ toDos } setToDos={ setToDos } />
-				<ToDoList toDos={ toDos } setToDos={ setToDos } />
+			<AddToDo toDos={ toDos } setToDos={ setToDos } />
+			<ToDoList toDos={ toDos } setToDos={ setToDos } />
 
-			</div>
 		</div>
 
 	);

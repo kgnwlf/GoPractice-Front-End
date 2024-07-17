@@ -14,12 +14,12 @@ export default function AddToDo ({ toDos, setToDos }) {
 	
 	return (
 		
-		<>
+		<div className="to-do-inputs-controller">
 		
 			<input
 				type="text"
 				placeholder="To-Do"
-				className="input input-bordered input-primary w-full max-w-xs tn-wide" 
+				className="input input-bordered input-primary tn-wide add-to-do-input" 
 				value={ toDo }
 				onChange={(e) => setToDo(e.target.value) }
 			/>
@@ -28,7 +28,7 @@ export default function AddToDo ({ toDos, setToDos }) {
 		
 				<button 
 					disabled={ toDo.length === 0 }
-					className="mt-2.5 btn btn-primary"
+					className="mt-2.5 btn btn-primary to-do-controll-buttons"
 					onClick={ addToDo }
 				>
 					
@@ -38,7 +38,7 @@ export default function AddToDo ({ toDos, setToDos }) {
 				
 				<button 
 					disabled={ toDos.length === 0 }
-					className="mt-2.5 ml-3 btn btn-primary"
+					className="mt-2.5 ml-3 btn btn-primary to-do-controll-buttons"
 					onClick={ clearAllToDos }
 				>
 					
@@ -48,7 +48,7 @@ export default function AddToDo ({ toDos, setToDos }) {
 		
 			</div>
 			
-		</>
+		</div>
 		
 	)
 	

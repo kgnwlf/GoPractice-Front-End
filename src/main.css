@@ -2,3 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.app-container {
+	position: relative;
+	
+	width: 27%;
+	height: 125vh;
+	
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.to-do-inputs-controller {
+	position: sticky;
+	top: 40px;
+	z-index: 1500;
+}
+
+.to-do-controll-buttons {
+	width: 47%;
+}
+
+.add-to-do-input {
+	width: 97%;
+}
